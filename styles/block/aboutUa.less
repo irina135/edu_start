@@ -1,0 +1,141 @@
+.aboutUs {
+  display: flex;
+  margin-bottom: 233px;
+  @media @breakpoint-Small {
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  @media @breakpoint-Large {
+    margin-bottom: 183px;
+  }
+  @media @breakpoint-Medium {
+    margin-bottom: 60px;
+  }
+  @media @breakpoint-Small {
+    margin: 0 auto;
+    margin-bottom: 160px;
+    max-width: 290px;
+  }
+}
+.aboutUs__img {
+  max-width: 478px;
+  height: 537px;
+  border-radius: 60px;
+  overflow: hidden;
+ @media @breakpoint-Large {
+   overflow: visible;
+ }
+  @media @breakpoint-Small {
+    width: 290px;
+    height: 420px;
+    margin: 0 auto;
+  }
+  img {
+    @media @breakpoint-Large {
+      max-width: 478px;
+      border-radius: 60px;
+    }
+    @media @breakpoint-Medium {
+      max-width: 290px;
+    }
+  }
+}
+.aboutUs__main {
+  margin-left: 68px;
+  @media @breakpoint-Small {
+    margin-left: 0;
+  }
+  @media @breakpoint-Small {
+    width: 290px;
+  }
+  h2 {
+    max-width: 565px;
+    margin-bottom: 35px;
+    font-size: 45px;
+    line-height: 68px;
+    font-weight: 500;
+    @media @breakpoint-Large {
+      font-size: 42px;
+      line-height: 60px;
+    }
+    @media @breakpoint-Medium {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.aboutUs__profile {
+  display: flex;
+  margin-bottom: 60px;
+  @media @breakpoint-Medium {
+    margin-bottom: 20px;
+  }
+}
+.profile__Img {
+  position: relative;
+  width: 134px;
+  height: 134px;
+  margin-right: 33px;
+  border-radius: 50%;
+  background: @colorOrange;
+  @media @breakpoint-Medium {
+    width: 80px;
+    height: 80px;
+  }
+  img {
+    position: absolute;
+  }
+}
+.profile__Text {
+  p {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 33px;
+    line-height: 50px;
+    font-weight: 500;
+    @media @breakpoint-Medium {
+      font-size: 28px;
+      margin-top: 0;
+    }
+  }
+  span {
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 400;
+    @media @breakpoint-Medium {
+      font-size: 22px;
+      line-height: 20px;
+    }
+  }
+}
+.aboutUs__text {
+  max-width: 491px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 500;
+  @media @breakpoint-Medium {
+   margin-bottom: 20px;
+  }
+}
+.aboutUs__grade {
+  display: flex;
+  flex-grow: 8;
+  @media @breakpoint-Small {
+    max-width: 290px;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  img {
+    width: 59px;
+    margin-right: 8px;
+    @media @breakpoint-Small {
+      width: 40px;
+    }
+  }
+}
+
+
+

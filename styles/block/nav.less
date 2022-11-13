@@ -1,0 +1,138 @@
+
+nav, .nav__authorization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  /*color: white;*/
+  a {
+    font-size: 15px;
+    line-height: 23px;
+    @media @breakpoint-Small {
+      font-size: 22px;
+    }
+  }
+}
+.nav__pt42 {
+  padding-top: 42px;
+  @media @breakpoint-Small {
+    padding-top: 20px;
+  }
+}
+.nav__pt106 {
+  padding-top: 106px;
+}
+.nav__pb87 {
+  padding-bottom: 87px;
+  @media @breakpoint-Medium {
+    padding-bottom: 40px;
+  }
+  @media @breakpoint-Small {
+    padding-bottom: 1px;
+  }
+}
+.nav__pb74 {
+  padding-bottom: 74px;
+}
+nav {
+  position: relative;
+  @media @breakpoint-Small {
+    flex-direction: column;
+  }
+}
+.nav__login {
+  @media @breakpoint-Small {
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: inherit;
+    @media @breakpoint-Small {
+      font-size: 26px;
+    }
+  }
+}
+.nav__links ul {
+  display: flex;
+  gap: 80px;
+  @media @breakpoint-Medium {
+    gap: 30px;
+  }
+  @media @breakpoint-Small {
+    display: none;
+  }
+  a {
+    position: relative;
+  }
+  a.link--active::after, a:hover::after {
+    left: 0;
+    bottom: -6px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 4px;
+    border-radius: 50px;
+    background: @colorWaite;
+  }
+}
+.nav__Linklogin {
+  display: inline-block;
+  padding: 13px 43px 13px 43px;
+  background: @gradient;
+  border-radius: 100px;
+  margin-left: 25px;
+}
+a.nav__Linklogin:hover {
+  .btn--hover()
+
+}
+/*mobile*/
+.nav__btn--mobile {
+  img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    background: white;
+  }
+  display: none;
+  @media @breakpoint-Small {
+    display: block;
+  }
+}
+.nav--mobile {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+  color: #FFFFFF;
+  li {
+    margin-bottom: 30px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  a {
+    font-size: 28px;
+  }
+}
+.nav__authorization--mobile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+}
+

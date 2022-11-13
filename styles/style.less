@@ -1,0 +1,42 @@
+@import "reset";
+@import "var";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: @colorBody;
+}
+div {
+  box-sizing: border-box;
+}
+.none {
+  display: none!important;
+}
+.container {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+//colors
+.color__waite {
+  color: @colorWaite;
+}
+.color__grey {
+  color: @colorGray;
+}
+.colorGray__linght {
+  color: @colorGrayLinght;
+}
+.color__Orange {
+  color: @colorOrange;
+}
+@import "block/header";
+@import "block/choice";
+@import "block/aboutUa";
+@import "block/started";
+@import "block/subscribe";
+@import "block/nav";

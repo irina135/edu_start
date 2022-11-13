@@ -1,0 +1,81 @@
+.started {
+  position: relative;
+  max-width: 1240px;
+  height: 581px;
+  margin-bottom: 135px;
+  border-radius: 60px;
+  padding-top: 116px;
+  text-align: center;
+  background: white;
+  @media @breakpoint-Medium {
+    height: 460px;
+  }
+  @media @breakpoint-Small {
+    border-radius: 35px;
+    padding: 25px 10px 40px 10px;
+    height: auto;
+  }
+  h2 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 519px;
+    font-size: 45px;
+    line-height: 68px;
+    font-weight: 500;
+    @media @breakpoint-Medium {
+      max-width: 600px;
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+  }
+  span {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+    @media @breakpoint-Small {
+      font-size: 22px;
+      line-height: 33px;
+      font-weight: 500;
+    }
+  }
+  div {
+    margin-top: 60px;
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      background: @gradient;
+      padding: 24px 54px;
+      border-radius: 27px;
+    }
+    a:hover {
+      .btn--hover()
+    }
+  }
+  &::before, &::after {
+    position: absolute;
+    width: 63px;
+    height: 83px;
+    content: '';
+    background-image: url("../../img/getStarted/img-start.svg");
+    @media @breakpoint-Small {
+      background-image: none;
+    }
+  }
+  &::before {
+    left: 74px;
+    bottom: 56px;
+    @media @breakpoint-Medium {
+      bottom: 30px;
+    }
+  }
+  &::after {
+    right: 80px;
+    top: 56px;
+    @media @breakpoint-Medium {
+      top: 30px;
+    }
+    transform: rotate(180deg);
+  }
+}
+
